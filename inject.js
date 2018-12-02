@@ -2,7 +2,7 @@
 
 export default ({ router }) => {
 // Baidu tongji integration
-  if (process.env.NODE_ENV === 'production' && HM_ID) {
+  if (process.env.NODE_ENV === 'production' && HM_ID && typeof window !== 'undefined') {
     window._hmt = window._hmt || [];
     (function() {
       var hm = document.createElement("script")
